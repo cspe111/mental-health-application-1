@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<style>
+    h1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-family: Avenir,sans-serif;
+    }
+    h3 {
+        display: flex;
+        justify-content: center;
+        font-family: Avenir,sans-serif;
+        font-weight: 300;
+    }
+    div {
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-family: Avenir,sans-serif;
+    }
+    button {
+        font-family: Avenir,sans-serif;
+        background: linear-gradient(to right, cyan , magenta);
+        padding: 4px;
+        font-size: 18px;
+        border-radius: 50px;
+        border-width: 0px;
+        width: 277px;
+        cursor: pointer;
+        font-weight: 400;
+    }
+    button:hover {
+        background: darkorchid;
+        color: white;
+        border-width: 0px;
+    }
+</style>
+<body>
+<h1>Employee Stats</h1>
+<h3> View Age Count of Employees</h3>
+    <div>
+        <button onclick="document.location='http://localhost:8889/view/Statistics/Images/Age_Count.png'" target="_blank">
+            View Age Count
+        </button>
+    </div>
+<br>
+<h3>View Percentage of Employees Who Fear a Negative Consequence </h3>
+    <div>
+        <button onclick="document.location='http://localhost:8889/view/Statistics/Images/FearConsequenceBar.png'" target="_blank">
+            View Bar Chart
+        </button>
+    </div>
+<br>
+<h3>View Heatmap of Attribute Correlations</h3>
+    <div>
+        <button onclick="document.location='http://localhost:8889/view/Statistics/Images/heatmap.png'" target="_blank">
+            View Heatmap
+        </button>
+    </div>
+<br>
+<h3>View Percentage of Employees Whose Mental Health Interferes with Work</h3>
+    <div>
+        <button onclick="document.location='http://localhost:8889/view/Statistics/Images/WorkInterferencePie.png'" target="_blank">
+            View Pie Chart
+        </button>
+    </div>
+</body>
+</html>
